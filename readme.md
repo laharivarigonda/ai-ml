@@ -1,4 +1,6 @@
 Day 2
+
+
 1.Why lists are used instead of variables?
 
 - Variables store a single value (e.g., x = 10).
