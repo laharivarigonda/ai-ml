@@ -24,3 +24,44 @@ Day 2
 - Lists → Arrays → Matrices → Datasets
 - Think of lists as the raw container for data before it’s structured into ML-ready formats.
 
+
+
+Day 3
+
+
+
+  ## Difference between List and Tuple
+- **List**
+  - Mutable (can be changed after creation).
+  - Syntax: `[1, 2, 3]`
+  - Suitable when data needs frequent updates.
+- **Tuple**
+  - Immutable (cannot be changed once created).
+  - Syntax: `(1, 2, 3)`
+  - Useful for fixed collections of data where immutability ensures safety.
+
+---
+
+##  Why Sets Don’t Allow Duplicates
+- Sets are based on **hashing**.
+- Each element is stored using its hash value, and duplicates would map to the same hash.
+- This ensures **uniqueness** and makes membership checks (`in`) very fast.
+
+---
+
+## 📌 Real ML Use Cases
+
+- **List**
+  - Storing feature vectors for training models.
+  - Example: `[height, weight, age]` for each user in a dataset.
+
+- **Tuple**
+  - Representing immutable pairs/triples of data, such as `(image_id, label)` in classification tasks.
+  - Ensures labels don’t get accidentally modified during training.
+
+- **Set**
+  - Tracking unique categories or classes in a dataset.
+  - Example: `{"cat", "dog", "bird"}` for classification problems.
+  - Helps quickly check if a predicted label belongs to the known classes.
+
+---
