@@ -247,14 +247,14 @@ models = [("LR", 0.82), ("SVM", 0.89), ("RF", 0.85)]
 # 1. Convert model names to a set
 # 2. Find the best model using tuple logic"""
 
-models = [("LR", 0.82), ("SVM", 0.89), ("RF", 0.85)]
+# models = [("LR", 0.82), ("SVM", 0.89), ("RF", 0.85)]
 
-model_names = set([m[0] for m in models])
-print("Model names set:", model_names)
+# model_names = set([m[0] for m in models])
+# print("Model names set:", model_names)
 
-best_model = models[0]   # assume first is best
-for m in models:
-    if m[1] > best_model[1]:
-        best_model = m
+# best_model = models[0]   # assume first is best
+# for m in models:
+#     if m[1] > best_model[1]:
+#         best_model = m
 
-print("Best model:", best_model[0], "with accuracy", best_model[1])
+# print("Best model:", best_model[0], "with accuracy", best_model[1])
