@@ -49,7 +49,7 @@ Day 3
 
 ---
 
-## 📌 Real ML Use Cases
+##  Real ML Use Cases
 
 - **List**
   - Storing feature vectors for training models.
@@ -65,3 +65,55 @@ Day 3
   - Helps quickly check if a predicted label belongs to the known classes.
 
 ---
+Day 4
+
+# Python Data Structures & ML Concepts
+
+## Difference Between List and Dictionary
+- **List**
+  - Ordered collection of items.
+  - Accessed by index (e.g., `list[0]`).
+  - Allows duplicates.
+  - Best for sequential data like feature vectors.
+
+- **Dictionary**
+  - Collection of key–value pairs.
+  - Accessed by key (e.g., `dict["name"]`).
+  - Keys must be unique.
+  - Best for structured mappings like model parameters.
+
+---
+
+## Why Dictionaries Are Used in APIs & ML
+- **APIs**
+  - JSON (the standard format for APIs) is dictionary-like.
+  - Enables structured data exchange:  
+    ```json
+    {"user": "Lahari", "role": "Developer"}
+    ```
+  - Fast lookups by key make request/response handling efficient.
+
+- **Machine Learning**
+  - Store model configurations:  
+    ```python
+    params = {"learning_rate": 0.01, "epochs": 50}
+    ```
+  - Map labels to classes:  
+    ```python
+    label_map = {0: "cat", 1: "dog", 2: "bird"}
+    ```
+
+---
+
+## How Conditions Help in Model Decisions
+- **Conditional logic** is fundamental in ML:
+  - Decision Trees split data based on conditions (e.g., `if age > 30`).
+  - Neural Networks apply activation functions that act like conditions (`if value > threshold`).
+  - Rule-based models rely on conditions to classify or predict outcomes.
+
+Example:
+```python
+if accuracy > 0.9:
+    print("Model is ready for deployment")
+else:
+    print("Model needs improvement")
