@@ -117,3 +117,52 @@ if accuracy > 0.9:
     print("Model is ready for deployment")
 else:
     print("Model needs improvement")
+
+
+Day 5
+
+# #Difference between for and while
+
+For Loop
+- Used when the number of iterations is known or can be determined in advance.
+- Typically involves a counter or range.
+- Example:
+for i in range(5):
+    print(i)
+
+- → Runs exactly 5 times.
+
+While Loop- Used when the number of iterations is not known beforehand.
+- Continues until a condition becomes false.
+- Example:
+x = 0
+while x < 5:
+    print(x)
+    x += 1
+- → Runs until x reaches 5.
+
+# #When would you use while instead of for?
+
+You should reach for a while loop when the number of iterations depends on dynamic events rather than a fixed count.
+Waiting for User Input: "Keep asking for a password until the user types the correct one."
+Reading Data Streams: "Read data from a sensor while the connection is active."
+Convergence in Math/AI: "Keep adjusting the numbers while the error rate is still above 0.01%."
+Game Loops: "Run the game logic while the player hasn't clicked 'Quit'."
+
+# #Why loops are important in ML?
+
+In Machine Learning, loops are the "heartbeat" of the learning process. Since a computer doesn't learn instantly, it needs to repeat actions to improve.
+
+Here is why they are indispensable:
+
+1. The Learning Cycle (Training)
+ML models learn through iteration. In a process called Gradient Descent, the model makes a guess, checks how wrong it is, and adjusts itself. This cycle happens thousands of times inside a loop until the model becomes accurate.
+
+2. Processing Massive Data
+You can't show a model a million images at once—the computer would crash. Instead, we use loops to feed the data in small batches. The loop ensures every single piece of data is eventually "seen" by the model.
+
+3. Hyperparameter Tuning
+Finding the best settings (like how fast a model should learn) is often trial and error. We use loops to test different configurations one after another to find the "sweet spot" for performance.
+
+4. Continuous Evaluation
+Loops allow us to constantly monitor a model's performance during training. If a loop detects that the model is no longer improving (or is starting to get worse), we can use the loop to trigger Early Stopping
